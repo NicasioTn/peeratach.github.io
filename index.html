@@ -27,7 +27,10 @@
         <!-- Top fixed navbar -->
         <nav class="navbar navbar-top navbar-expand-md navbar-dark header__navbar">
             <div class="container-lg">
-                <a class="navbar-brand" href="#"><py-script>print("Hello Peter")</py-script></a>
+                <a class="navbar-brand" href="#">
+                    <py-script>
+print("Peter pyscript")
+                    </py-script></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTopCollapsible"
                     aria-controls="navbarTopCollapsible" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -127,7 +130,7 @@
                             ipsa? Sunt consequatur quod voluptatem sit amet consectetur adipisicing elit. Aliquam
                             molestiae, ipsam perspiciatis perferendis fugiat, dolores corporis sint illum laboriosam
                             nam asperiores voluptatibus et natus enim officia atque? Sunt, sit itaque?</p>
-                            <p><py-script>
+                            <p style="align-self: center;"><py-script>
 from datetime import datetime
 now = datetime.now()
 now.strftime("%m/%d/%Y, %H:%M:%S")
