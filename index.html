@@ -127,12 +127,12 @@
                             ipsa? Sunt consequatur quod voluptatem sit amet consectetur adipisicing elit. Aliquam
                             molestiae, ipsam perspiciatis perferendis fugiat, dolores corporis sint illum laboriosam
                             nam asperiores voluptatibus et natus enim officia atque? Sunt, sit itaque?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, perferendis commodi
-                            aliquam blanditiis dicta porro assumenda, similique sunt eaque aut praesentium at vitae
-                            totam repellendus! Deserunt ratione sit quidem nulla.Quaerat, alias aspernatur delectus
-                            aliquid sed cupiditate laboriosam vel officia illum veritatis fugit! Veniam adipisci,
-                            nostrum eligendi est distinctio vero atque nulla hic quae non voluptatibus, laboriosam
-                            nam esse qui.</p>
+                            <p><py-script>
+from datetime import datetime
+now = datetime.now()
+now.strftime("%m/%d/%Y, %H:%M:%S")
+                            </py-script>
+                            </p>
                     </div>
                     <div>
                         <iframe style="border-radius:12px"
@@ -574,12 +574,8 @@
                     <form>
                         <div class="form-group">
                             <label for="Username">Username</label>
+                            <input required type="text" class="form-control" id="Username">
                             
-                            <py-script>
-username = "NicasioTn"
-email = "Peeratach.ten@gmail.com"
-                            </py-script>
-                            <input required type="text" class="form-control" id="Username" value={username}>
                         </div>
                         <div class="form-group">
                             <label for="Email">Email</label>
